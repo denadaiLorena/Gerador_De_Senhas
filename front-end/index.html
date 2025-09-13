@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Lexend:wght@100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    
+    <title>Gerador de Senhas</title>
+    <link rel="icon" type="image/png" href="/front-end/adicionais/trancar3_Icone.png">
+
+</head>
+<body>
+    <section id="paginaPrincipal">
+        <h1>SEJA BEM-VINDO AO GERADOR DE SENHAS</h1>
+
+        <div id="secao-formulario">
+            <form>
+                <fieldset>
+                    <div class="campo">
+                    <label for="quantidadeCaracteres">Quantidade de Caracteres</label>
+                    <input type="text" name="quantidadeCaracteres" id="quantidadeCaracteres" required>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="boxes">
+                        <h2>Tem:</h2>
+
+                        <label>
+                        <input type="checkbox" name="temMaiusculas" id="temMaiusculas" value="maiusculas">maiúsculas
+                        </label>
+                     
+                        <label>
+                        <input type="checkbox" name="temMinusculas" id="temMinusculas" value="minusculas">minúsculas
+                        </label>
+        
+                        <label>
+                        <input type="checkbox" name="temDigitos" id="temDigitos" value="digitos">dígitos
+                        </label>
+
+                        <label>
+                        <input type="checkbox" name="temSimbolos" id="temSimbolos" value="simbolos">símbolos
+                        </label>
+                    
+                    </div>
+
+                </fieldset>
+
+                <div class="botao">
+                    <button type="button" onclick="gerarSenha()">Gerar</button>
+                   
+                </div>
+
+                <div class="senha-container">
+                    <label type="text" id="resultado"></label>
+                    <button type="button" onclick="copiarSenha(document.getElementById('resultado').innerText)" id="copiarBotao" title="Copiar senha">
+                        <img src="/front-end/adicionais/copiar_ICone.png" alt="icone de copiar">
+                    </button>
+                </div>
+    
+            </form>
+        </div>
+    </section>
+    
+</body>
+<script src="script.js"></script>
+</html>
