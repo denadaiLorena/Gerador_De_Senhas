@@ -1,11 +1,11 @@
-🔐 # Gerador de Senhas
+# 🔐Gerador de Senhas
 
 O Gerador de Senhas é uma aplicação simples e prática que permite criar senhas personalizadas de forma rápida e segura.
 Você pode escolher o tamanho da senha e definir se deseja incluir letras maiúsculas, minúsculas, números e símbolos.
 
 Após gerar, a senha pode ser copiada com um clique para ser usada onde quiser — garantindo praticidade e mais segurança nas suas contas.
 
-🚀 ## Tecnologias utilizadas
+## 🚀Tecnologias utilizadas
 
 Back-end ->
 Java 17+,
@@ -16,7 +16,7 @@ Front-end ->
 HTML, CSS e JavaScript puro
 
 
-⚙️ ## Como executar o projeto  
+## ⚙️Como executar o projeto  
 
 🖥️ 1. Clonar o repositório  
 ```  
@@ -25,7 +25,7 @@ git clone https://github.com/seu-usuario/gerador-senhas.git
 ```
 
 
-🔧 ### 2. Executar o back-end (Spring Boot)
+### 🔧2. Executar o back-end (Spring Boot)
 
 1 - Acesse a pasta do projeto back-end:  
 ```bash
@@ -42,7 +42,7 @@ mvn spring-boot:run
 http://localhost:8080
 ```
 
-💻 ### 3. Executar o front-end
+### 💻3. Executar o front-end
 
 1 - Acesse a pasta do front-end:  
 ```bash
